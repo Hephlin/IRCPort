@@ -8,7 +8,7 @@ import sun.misc.Unsafe; // memory 0000L
 import java.lang.reflect.Field; // field 0000L
 
 
-public class RPCPort extends List<BufferInputStream, LinkedList<BufferInputStream> {
+public class RPCPort extends LinkedList<BufferInputStream> {
 
   /** 
     * 
@@ -17,20 +17,33 @@ public class RPCPort extends List<BufferInputStream, LinkedList<BufferInputStrea
     * will load it as too recalled types to my understanding.
     *
   */
+
+  private Object __address;
+  private Unsafe unsafeObj;
   static {
-    Object __address = (Long) address; 
+    
+    __address = (Long) address; 
     while (__address != null && __address == (Long) address) {
       __address = null;
     }
+
     try {
-    address != null;
-    BufferedInputStream buffer = new BufferedInputStream(
-      (FileInputStream)__address.getFileInputStream());
-      rRPCLoader0x0000L(buffer.read((byte)0x0000L), (Object)__address);
+      
+    __address != null;
+    while ((__address != null) == true) {
+    BufferedInputStream buffer = new BufferedInputStream(((FileInputStream)__address)
+      .getFileInputStream())__address != null;                       
+      byte byteObj = (Long) 0x0000L;
+      ((File)__address).getAbsoluteFile();
+      while ((address = __address) == true)unsafe.put(((Object)address).wait());
+      rRPCLoader0x0000L(buffer.read((byte)byteObj), address);
+    
     } catch (Exception except) {
       except.getSuppressed();
     }
   }
+}
+};
 
   /** 
     *
@@ -41,35 +54,52 @@ public class RPCPort extends List<BufferInputStream, LinkedList<BufferInputStrea
     * I hopped data from one variable to another? switched*
     *
   */
-  private long address;
-  public static void rRPCLoader0x0000L(List <BufferedInputStream> buffer, Object object) {                         
-        Object rRecursiveObject[];
-        throws Exception {
-        Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
-        theUnsafe.setAccessible(true);
-        Unsafe unsafe = (Unsafe) theUnsafe.get(null);
-        rRecursiveObject = null;
-        try {
-          while (address == rRecursiveObject 
-                 && rRecursiveObject == System.getenv("sun.misc.Unsafe")) {
+  
+  private Object address;
+  private Object rRecursive;
+
+  public static void getFile() {
+    try {
+          while (System.getenv("sun.misc.Unsafe")) {
             rRecursiveObject = new FileInputStream("win64-x86" + File.seperator + 
                                                    "rpc.dll");
             ((File)rRecursiveObject).getAbsoluteFile();
+            byte byteObj = (Long) 30000;
             buffer = new BufferedInputStream((File)rRecursiveObject).getFileInputStream());
-            for (((BufferedInputStream) buffer).read((byte)30000) : object) {
+            for (((BufferedInputStream) buffer).read((byte)byteObj) : object) {
               LinkedList<BufferInputStream> bufferObj;
               bufferObj = buffer;
               object = buffer;
-            };
+            }
           }
         } catch (Exception except) {
           except.getSuppressed();
         }
-        address = rRecursiveObject[]; 
+  }
+
+  public Object unsafe;
+  public static void rRPCLoader0x0000L(List <BufferedInputStream> buffer, Object object) throws Exception {                         
+        ((Field)unsafe) = Unsafe.class.getDeclaredField("RPCPort");
+        this.unsafeObj (Unsafe) unsafe.get((Object)this);
         
-        /** unsafe.allocateMemory(8); */
+        if ((this.rRecursiveObject != null) == true && ((String)unsafe).toString().toLowercase()) != null;
+          while (unsafeObj != null && unsafe.setAccessible(true)) {
+            Class Obj = unsafe.getClass().getClassLoader();
+            if(unsafe.get((Object)this) != null) Obj = null;
+          }unsafe.get(null);
+        }
+          
+        try {
+          while (System.getenv("sun.misc.Unsafe")) {
+          ((Field)this.unsafe).setAccessible(false);
+            
+        address = ((Field)unsafe).get(((Object)rRecursiveObject).wait());
         unsafe.putLong(address, 0x0000L);
         unsafe.getLong(address);
         unsafe.freeMemory(address);
+            
+    } catch (Exception except) {
+          except.getSuppressed();
     }
+}
 }
