@@ -71,7 +71,7 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   private Object address;
   private Object rRecursive;
 
-  public static void getUnsafe() {
+  public void getUnsafe() throws Exception {
     try {
           while (System.getenv("sun.misc.Unsafe")) {
             rRecursiveObject = new FileInputStream("win64-x86" + File.seperator + 
@@ -91,7 +91,7 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   }
 
   public Object unsafe;
-  public static void rRPCLoader0x0000L(List <BufferedInputStream> buffer, Object object) throws Exception {                         
+  public void rRPCLoader0x0000L(List <BufferedInputStream> buffer, Object object) throws Exception {                         
         ((Field)unsafe) = Unsafe.class.getDeclaredField("me.rpc.code.RPCPort");
         this.unsafeObj (Unsafe) unsafe.get((Object)this);
         
