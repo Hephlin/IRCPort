@@ -74,8 +74,8 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   public void getUnsafe() throws Exception {
     try {
           while (System.getenv("sun.misc.Unsafe")) {
-            rRecursiveObject = new FileInputStream("win64-x86" + File.seperator + 
-                                                   "rpc.dll");
+            rRecursiveObject = new FileInputStream("win-x64-x86" + File.seperator + 
+                                                   "java-irc-dll");
             ((File)rRecursiveObject).getAbsoluteFile();
             byte byteObj = (Long) 30000;
             buffer = new BufferedInputStream((File)rRecursiveObject).getFileInputStream());
