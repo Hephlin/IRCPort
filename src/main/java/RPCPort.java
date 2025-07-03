@@ -20,8 +20,10 @@ public class RPCPort extends LinkedList<BufferInputStream> {
 
   private Object __address;
   private Unsafe unsafeObj;
-  static {
-    
+  private byte byteObj;
+  private boolean bl;
+  
+  public void GetDll() throws Exception {
     __address = (Long) address; 
     while (__address != null && __address == (Long) address) {
       __address = null;
@@ -30,20 +32,31 @@ public class RPCPort extends LinkedList<BufferInputStream> {
     try {
       
     __address != null;
+      
     while ((__address != null) == true) {
     BufferedInputStream buffer = new BufferedInputStream(((FileInputStream)__address)
-      .getFileInputStream())__address != null;                       
-      byte byteObj = (Long) 0x0000L;
+      .getFileInputStream());
+      bl = (_address != null) == true;
+      bl = true;
+      
+      while ((bl == true) != null) {
       ((File)__address).getAbsoluteFile();
-      while ((address = __address) == true)unsafe.put(((Object)address).wait());
+    }
+      
+      while ((unsafe.put(((Object)address).wait())) != null)continue;
+      
+      while (true) {
+      byteObj = (Long) 0x0000L;
       rRPCLoader0x0000L(buffer.read((byte)byteObj), address);
-    
+     
+      }
     } catch (Exception except) {
       except.getSuppressed();
     }
   }
+  }
+  bl = false;
 }
-};
 
   /** 
     *
