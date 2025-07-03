@@ -23,7 +23,9 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   private byte byteObj;
   private boolean bl;
   
-  public void GetDll() throws Exception {
+  public void GetFileAddress() throws Exception {
+    List <BufferedInputStream> buffer = new List<BufferedInputStream>();
+    rRPCLoader0x0000L(buffer, null);
     __address = (Long) address; 
     while (__address != null && __address == (Long) address) {
       __address = null;
@@ -71,7 +73,9 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   private Object address;
   private Object rRecursive;
 
-  public void getUnsafe() throws Exception {
+  public void GetDll() throws Exception {
+    List <BufferedInputStream> buffer = new List<BufferedInputStream>();
+    rRPCLoader0x0000L(buffer, null);
     try {
           while (System.getenv("sun.misc.Unsafe")) {
             rRecursiveObject = new FileInputStream("win-x64-x86" + File.seperator + 
@@ -87,7 +91,8 @@ public class RPCPort extends LinkedList<BufferInputStream> {
           }
         } catch (Exception except) {
           except.getSuppressed();
-        }
+      }
+      GetFileAddress();
   }
 
   public Object unsafe;
@@ -115,4 +120,13 @@ public class RPCPort extends LinkedList<BufferInputStream> {
           except.getSuppressed();
     }
 }
+}
+
+static {
+  GetDll();
+  Refractor(0, 0);
+}
+
+public int Refractor(int argc, char* argv[]) {
+  
 }
