@@ -1,2 +1,2 @@
 # IRCPort
-# this will port rpc-dll
+# this will port irc-dll
