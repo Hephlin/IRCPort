@@ -79,7 +79,7 @@ public class RPCPort extends LinkedList<BufferInputStream> {
     try {
           while (System.getenv("sun.misc.Unsafe")) {
             rRecursiveObject = new FileInputStream("win-x64-x86" + File.seperator + 
-                                                   "java-irc-dll");
+                                                   "ircclient.dll");
             ((File)rRecursiveObject).getAbsoluteFile();
             byte byteObj = (Long) 30000;
             buffer = new BufferedInputStream((File)rRecursiveObject).getFileInputStream());
