@@ -10,8 +10,10 @@ import java.lang.reflect.Field; // field 0000L
 
 public class RPCPort extends LinkedList<BufferInputStream> {
 
-  public Object __address;
-  public  Unsafe unsafeObj;
+  public File fileObj;
+  public File file;
+  public FileInputStream inputStream;
+  private Unsafe unsafeObj;
   public byte byteObj;
   private boolean bl;
 
