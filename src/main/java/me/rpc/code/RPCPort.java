@@ -10,54 +10,29 @@ import java.lang.reflect.Field; // field 0000L
 
 public class RPCPort extends LinkedList<BufferInputStream> {
 
-  /** 
-    * 
-    * to load buffer input stream with a long integer I would
-    * have to some how make java think the var is an address and so java
-    * will load it as too recalled types to my understanding.
-    *
-  */
-
-  private Object __address;
-  private Unsafe unsafeObj;
-  private byte byteObj;
+  public Object __address;
+  public  Unsafe unsafeObj;
+  public byte byteObj;
   private boolean bl;
-  
-  public void GetFileAddress() throws Exception {
-    List <BufferedInputStream> buffer = new List<BufferedInputStream>();
-    rRPCLoader0x0000L(buffer, null);
-    __address = (Long) address; 
-    while (__address != null && __address == (Long) address) {
-      __address = null;
-    }
 
-    try {
-      
-    __address != null;
-      
-    while ((__address != null) == true) {
-    BufferedInputStream buffer = new BufferedInputStream(((FileInputStream)__address)
-      .getFileInputStream());
-      bl = (_address != null) == true;
-      bl = true;
-      
-      while ((bl == true) != null) {
-      ((File)__address).getAbsoluteFile();
-    }
-      
-      while ((unsafe.put(((Object)address).wait())) != null)continue;
-      
-      while (true) {
-      byteObj = (Long) 0x0000L;
-      rRPCLoader0x0000L(buffer.read((byte)byteObj), address);
+  public List buffer;
+  private int byteAmount;
+  
+
+  public void GetObj() throws Exception {
+    System.getenv("jna.tmpdir");
+    buffer = new List<BufferedInputStream>();
+    rRPCLoader0x0000L(buffer, null);
+    file = new File("");
+    try 
+      System.getenv("jna.tmpdir");
+      while ((unsafe.put(((Object)unsafeObj).wait()))
+      rRPCLoader0x0000L(buffer.read((byte)byteAmount), buffer.getInputStream());
      
       }
     } catch (Exception except) {
       except.getSuppressed();
     }
-  }
-  }
-  bl = false;
 }
 
   /** 
@@ -74,59 +49,56 @@ public class RPCPort extends LinkedList<BufferInputStream> {
   private Object rRecursive;
 
   public void GetDll() throws Exception {
-    List <BufferedInputStream> buffer = new List<BufferedInputStream>();
+    buffer = new List<BufferedInputStream>();
     rRPCLoader0x0000L(buffer, null);
     try {
-          while (System.getenv("sun.misc.Unsafe")) {
-            rRecursiveObject = new FileInputStream("win-x64-x86" + File.seperator + 
-                                                   "ircclient.dll");
-            ((File)rRecursiveObject).getAbsoluteFile();
-            byte byteObj = (Long) 30000;
-            buffer = new BufferedInputStream((File)rRecursiveObject).getFileInputStream());
-            for (((BufferedInputStream) buffer).read((byte)byteObj) : object) {
-              LinkedList<BufferInputStream> bufferObj;
-              bufferObj = buffer;
-              object = buffer;
+          System.getenv("sun.misc.Unsafe");
+            inputStream = new FileInputStream("win-x64-x86" + File.seperator + 
+                                      "");
+            byteObj;
+            byteAmount = 0;
+            for (byteAmount = 30000; byteAmount <= 30000; byteAmount++) {
+              byteAmount[byteObj];
             }
-          }
+            byteObj = byteAmount;
+            buffer = new BufferedInputStream((FileInputStream)inputStream).getFileInputStream());
+            GetObj();
+            file.getAbsoluteFile();
+            
         } catch (Exception except) {
           except.getSuppressed();
       }
-      GetFileAddress();
   }
 
   public Object unsafe;
   public void rRPCLoader0x0000L(List <BufferedInputStream> buffer, Object object) throws Exception {                         
+        try {
         ((Field)unsafe) = Unsafe.class.getDeclaredField("me.rpc.code.RPCPort");
         this.unsafeObj (Unsafe) unsafe.get((Object)this);
         
-        if ((this.rRecursiveObject != null) == true && ((String)unsafe).toString().toLowercase()) != null;
-          while (unsafeObj != null && unsafe.setAccessible(true)) {
-            Class Obj = unsafe.getClass().getClassLoader();
-            if(unsafe.get((Object)this) != null) Obj = null;
-          }unsafe.get(null);
+         (String)unsafe).toString().toLowercase());
+         GetUnsafeContinuer();
+          unsafe.setAccessible(false();
+          unsafe.get(null);
+        } catch (Exception except) {
+          System.out.printnln(except.getCause());
+          except.getSupressed();
         }
-          
-        try {
-          while (System.getenv("sun.misc.Unsafe")) {
-          ((Field)this.unsafe).setAccessible(false);
-            
-        address = ((Field)unsafe).get(((Object)rRecursiveObject).wait());
+  }
+
+  public void GetUnsafeContinuer() {
+    try { 
+        System.getenv("sun.misc.Unsafe");
+        ((Field)this.unsafe).setAccessible(false);
         unsafe.putLong(address, 0x0000L);
         unsafe.getLong(address);
         unsafe.freeMemory(address);
             
     } catch (Exception except) {
+          System.out.println(except.getCause());
           except.getSuppressed();
     }
-}
-}
-
-static {
-  GetDll();
-  Refractor(0, 0);
+  }
 }
 
-public int Refractor(int argc, char* argv[]) {
-  
-}
+public void Refractor(int argc, char* argv[]);
