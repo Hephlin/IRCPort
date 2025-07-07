@@ -25,7 +25,7 @@ public class RPCPort extends LinkedList<BufferInputStream> {
     System.getenv("jna.tmpdir");
     buffer = new List<BufferedInputStream>();
     rRPCLoader0x0000L(buffer, null);
-    file = new File("");
+    file = new File("win-x64-x86/ircclient.dll");
     try 
       System.getenv("jna.tmpdir");
       while ((unsafe.put(((Object)unsafeObj).wait()))
@@ -37,26 +37,12 @@ public class RPCPort extends LinkedList<BufferInputStream> {
     }
 }
 
-  /** 
-    *
-    * The function name was added with a 0x0000L so I expect as A
-    * kind of icon the memory address is a long integer byte address
-    * as a kind of core memory address look idk what ever
-    * and I did the same thing as shown up in the top
-    * I hopped data from one variable to another? switched*
-    *
-  */
-  
-  private Object address;
-  private Object rRecursive;
-
-  public void GetDll() throws Exception {
+public void GetDll() throws Exception {
     buffer = new List<BufferedInputStream>();
     rRPCLoader0x0000L(buffer, null);
     try {
           System.getenv("sun.misc.Unsafe");
-            inputStream = new FileInputStream("win-x64-x86" + File.seperator + 
-                                      "");
+            inputStream = new FileInputStream("win-x64-x86/ircclient" + File.seperator + ".dll");
             byteObj;
             byteAmount = 0;
             for (byteAmount = 30000; byteAmount <= 30000; byteAmount++) {
