@@ -1,0 +1,6 @@
+Windows 10: 
+
+Java
+Visual Studios 2022
+CMake-GUI
+MingW G++
